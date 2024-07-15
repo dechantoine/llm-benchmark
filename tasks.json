@@ -1,0 +1,50 @@
+{"movies":{
+  "TASK_ID": "movies",
+  "SOURCE_TABLE": "",
+  "TARGET_TABLE": "",
+  "TEXT_COLUMN_NAME": "message",
+  "ID_COLUMN_NAME": "id",
+  "ID_COLUMN_TYPE": "INTEGER",
+  "LABEL_COLUMN_NAME": "label",
+  "COMPLETION_TOKENS_COLUMN_NAME": "completion_tokens",
+  "PROMPT_TOKENS_COLUMN_NAME": "prompt_tokens",
+  "RESPONSE_BLOCKED_ERROR_LABEL": "RESPONSE_BLOCKED_ERROR",
+  "VALIDATION_ERROR_LABEL": "VALIDATION_ERROR",
+  "HARMFUL_CONTENT_ERROR_LABEL": "HARMFUL_CONTENT_ERROR",
+  "PREPROMPT": "Your goal is to classify a film into categories given its synopsis. Here are the categories:",
+  "LABELS":
+  ["ACTION",
+   "ADVENTURE",
+   "ANIMATION",
+   "COMEDY",
+   "CRIME",
+   "DRAMA",
+   "FAMILY",
+   "FANTASY",
+   "HISTORY",
+   "HORROR",
+   "MUSIC",
+   "MYSTERY",
+   "ROMANCE",
+   "SCIENCE_FICTION",
+   "THRILLER",
+   "WAR",
+   "WESTERN"],
+  "EXAMPLES": {
+    "INPUT": "A family is terrorized by demonic forces after moving into a home in which a grisly mass suicide took place.",
+    "OUTPUT": "HORROR"
+  },
+  "PREDICT_LABELS_INDEX": "False",
+  "MODELS": {
+    "openai":
+    ["ms-gpt-35-turbo",
+     "ms-gpt-4"],
+    "vertexai":
+    ["gemini-1.0-pro",
+      "gemini-1.5-pro",
+      "gemini-1.5-flash"],
+    "mistral-preview":
+    ["mistral-small",
+    "mistral-large"]
+  }
+}}
