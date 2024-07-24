@@ -45,6 +45,8 @@
       "gemini-1.5-flash"],
     "mistral-preview":
     ["mistral-small",
-    "mistral-large"]
+    "mistral-large"],
+    "llama-gcp":
+    ["llama3-405b-instruct-maas"]
   }
 }}
