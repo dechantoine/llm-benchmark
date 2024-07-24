@@ -14,5 +14,8 @@ def get_llm(provider: str, *args, **kwargs) -> BaseLLM:
     elif provider == "llamacpp":
         from .llamacpp import LlamaCPP
         return LlamaCPP(*args, **kwargs)
+    elif provider == "llama-gcp":
+        from .llama_gcp import LlamaGCP
+        return LlamaGCP(*args, **kwargs)
     else:
         raise ValueError(f"Unsupported provider: {provider}")
